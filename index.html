@@ -6,12 +6,10 @@
     <title>Sản phẩm của Lương Cảnh</title>
     <style>
         body { 
-            /* Sử dụng file background.jpg bạn đã có */
-            background-image: url('background.jpg'); 
-            background-size: cover;
-            background-position: center;
+            /* Nếu bạn chưa có file background.jpg, mình dùng tạm màu gradient xanh cho đẹp nhé */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
             background-attachment: fixed;
-            font-family: 'Segoe UI', sans-serif; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             margin: 0;
             display: flex;
             justify-content: center;
@@ -20,47 +18,47 @@
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.9); /* Khung trắng mờ xịn xò */
+            background: rgba(255, 255, 255, 0.95); 
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
             max-width: 700px;
             width: 90%;
             text-align: center;
             margin: 40px 20px;
         }
 
-        h1 { color: #2c3e50; }
-        h3 { color: #3498db; margin-top: 25px; }
+        h1 { color: #4a148c; margin-bottom: 10px; }
+        h3 { color: #1a237e; border-bottom: 2px solid #7986cb; display: inline-block; padding-bottom: 5px; }
         
         img, video { 
             max-width: 100%; 
             height: auto;
             border-radius: 12px; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             margin: 15px 0;
         }
 
-        .footer { margin-top: 30px; color: #7f8c8d; font-size: 0.85em; }
+        .footer { margin-top: 25px; color: #7f8c8d; font-size: 0.85em; font-style: italic; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Dự án Nội dung số</h1>
-        <p>Sinh viên thực hiện: <strong>Lương Cảnh</strong></p>
+        <p>Thực hiện bởi: <strong>Lương Cảnh</strong></p>
         
-        <h3>Infographic</h3>
-        <img src="infographic.png" alt="Infographic">
+        <h3>1. Infographic</h3>
+        <img src="phan_2%202.1_LuongCanh.png" alt="Infographic">
 
-        <h3>Video Clip</h3>
+        <h3>2. Video Clip</h3>
         <video controls>
-            <source src="video.mp4" type="video/mp4">
+            <source src="phan_2%202.2_LuongCanh.mp4" type="video/mp4">
             Trình duyệt không hỗ trợ xem video.
         </video>
 
         <div class="footer">
-            <p>© 2026 - Hỗ trợ bởi AI - GitHub Copilot</p>
+            <p>© 2026 - Nội dung hỗ trợ bởi AI (GitHub Copilot)</p>
         </div>
     </div>
 
