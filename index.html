@@ -1,24 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sản phẩm của tôi</title>
     <style>
-        body { text-align: center; font-family: sans-serif; }
-        img, video { max-width: 90%; margin: 20px; border-radius: 10px; }
+        body { 
+            /* Hình nền */
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9); /* Khung trắng mờ */
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 700px;
+            width: 90%;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 { color: #2c3e50; }
+        h3 { color: #2980b9; margin-top: 20px; }
+        
+        img, video { 
+            max-width: 100%; 
+            height: auto;
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin: 10px 0;
+        }
+
+        .footer { margin-top: 30px; color: #7f8c8d; font-size: 0.8em; }
     </style>
 </head>
 <body>
-    <h1>Dự án Nội dung số</h1>
-    
-    <h3>Infographic</h3>
-    <img src="infographic.png">
 
-    <h3>Video Clip</h3>
-    <video controls width="600">
-        <source src="video.mp4" type="video/mp4">
-    </video>
+    <div class="container">
+        <h1>Dự án Nội dung số</h1>
+        
+        <h3>Infographic</h3>
+        <img src="infographic.png" alt="Infographic">
 
-    <p>© 2024 - Hỗ trợ bởi AI</p>
+        <h3>Video Clip</h3>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Trình duyệt không hỗ trợ video.
+        </video>
+
+        <div class="footer">
+            <p>© 2026 - Hỗ trợ bởi AI - Lương Cảnh</p>
+        </div>
+    </div>
+
 </body>
 </html>
